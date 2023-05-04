@@ -60,7 +60,10 @@ Example commands:
 git clone: https://github.com/Ashnaali3255/setup-react-2.git
 
 
-3. Install
+3. Install 
+
+- For installation you can run this command to your terminal:   npm install  
+- For a Live Version you can run this below command to your terminal:  npm run start
 
 4. Usage
 
