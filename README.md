@@ -20,7 +20,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [React Components] <a name="About-React-Components"></a>
+# 📖 [React Events] <a name="About-React-Events"></a>
 
 ## 🛠 Built With <a name="built-with">
 #Tech Stack
@@ -34,7 +34,7 @@ JSX,CSS
 
 - [ ] **[Github Flow Execution]**
 - [ ] **[React and linters]**
-- [ ] **[Add Components]**
+- [ ] **[Math magicians: events]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -102,7 +102,7 @@ git clone: https://github.com/Ashnaali3255/setup-react-2.git
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Github Flow Execution]**
-- [ ] **[Math magicians: events]**
+- [ ] **[Math magicians: fetch data from API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
