@@ -1,6 +1,11 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .container {
   margin-top: 4rem;
-  margin-left: 50%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   max-width: 33.33%;
@@ -56,7 +61,7 @@
 }
 
 .zero {
-  min-width: calc(50%);
+  min-width: calc(50% - 1px);
   text-align: center;
   border-bottom: none;
 }
