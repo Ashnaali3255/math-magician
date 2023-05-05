@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color:  #858693;
+  background-color: #858693;
   border-bottom: 1px hsl(0, 0%, 90%) solid;
   margin-bottom: 4rem;
 }
@@ -16,7 +16,7 @@ body {
 .navBar h1 {
   font-size: 27px;
   font-weight: 600;
-  font-family: math;
+  font-family: math, sans-serif;
 }
 
 .navbar-links-cont button {
@@ -53,8 +53,9 @@ ul {
   display: flex;
   list-style: none;
   gap: 6%;
-  font-family: math;
+  font-family: math, sans-serif;
 }
+
 /* Quote styling */
 .quote-container {
   display: flex;
