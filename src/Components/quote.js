@@ -1,61 +1,31 @@
 import '../App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Quote() {
   const [quote, setQuote] = useState('');
-  const [author, setAuthor] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  const category = 'success';
-  const getQuotes = async () => {
-    const url = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
-    try {
-      setLoading(true);
-      fetch(url, {
-        method: 'GET',
-        withCredentials: true,
-        headers: {
-          'X-Api-Key': 'OKpI3STpcOaUiYWpVrjg9Q==yE7SfUxIe8yPriO5',
-          'Content-Type': 'application/json',
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          setQuote(data[0].quote);
-          setAuthor(data[0].author);
+  const [error, setError] = useState('');
+  const [isLoading, setLoading] = useState(true);
+  useEffect(() => {
+    const category = 'success';
+    const getQuotes = async () => {
+      try {
+        const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
+          headers: { 'X-Api-Key': 'OKpI3STpcOaUiYWpVrjg9Q==yE7SfUxIe8yPriO5' },
         });
-      setLoading(false);
-    } catch (error) {
-      setLoading(false);
-      // print error to console for debugging purposes
-    }
-  };
-
-  useState(() => {
+        const data = await response.json();
+        setQuote(`${data[0].quote} - ${data[0].author}`);
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
     getQuotes();
   }, []);
 
-  const handleClick = () => {
-    getQuotes();
-  };
-
   return (
     <div className="quote-container">
-      <h2>
-        {quote}
-        <span className="author">
-                &nbsp;(
-          { author}
-          )
-        </span>
-      </h2>
-      <button
-        type="button"
-        onClick={handleClick}
-        className="quote-button"
-      >
-        {loading ? 'Loading..' : 'New Quote'}
-      </button>
+      <p>{isLoading ? 'Loading...' : (error || quote)}</p>
     </div>
   );
 }
