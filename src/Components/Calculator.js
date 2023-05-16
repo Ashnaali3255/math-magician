@@ -17,7 +17,7 @@ function Calculator() {
   return (
 
     <div className="container">
-      <h2 className="headingcalc">Let us do some Math</h2>
+      <h2 className="headingcalc">Lets do some Math!</h2>
       <div className="calscreen">{ next || operation || total || 0 }</div>
       <div className="calcbtns">
         <div className="rows">

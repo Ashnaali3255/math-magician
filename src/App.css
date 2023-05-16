@@ -24,23 +24,34 @@ ul {
   list-style: none;
   gap: 6%;
   font-family: math, sans-serif;
+  
 }
 
 /* Quote styling */
 .quote-container {
   display: flex;
-  margin-top: 200px;
-  margin-right: -21%;
-  float: right;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  font-family: cursive;
-  gap: 10px;
+  margin: 10%;
 }
 
 p {
   font-family: fantasy;
   font-size: 54px;
+}
+
+.quote-button {
+  position: relative;
+  width: -moz-fit-content;
+  width: 24%;
+  height: 2rem;
+  background-color: gold;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-family: cursive;
 }
 
 /* Home Page */
@@ -50,12 +61,12 @@ p {
 
 .homePage h2 {
   margin-bottom: 2rem;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .homePage p {
   margin-bottom: 1rem;
-  font-size: 15px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 1.7;
 }
