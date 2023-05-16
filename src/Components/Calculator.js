@@ -1,6 +1,7 @@
 import './Calculator.css';
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import '../App.css';
 
 function Calculator() {
   const [state, setState] = useState({
@@ -14,7 +15,9 @@ function Calculator() {
   };
   const { next, operation, total } = state;
   return (
+
     <div className="container">
+      <h2 className="headingcalc">Lets do some Math!</h2>
       <div className="calscreen">{ next || operation || total || 0 }</div>
       <div className="calcbtns">
         <div className="rows">
