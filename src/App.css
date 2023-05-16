@@ -33,7 +33,7 @@ ul {
   margin-right: -21%;
   float: right;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 40%;
   font-family: cursive;
   gap: 10px;
 }
@@ -41,4 +41,29 @@ ul {
 p {
   font-family: fantasy;
   font-size: 54px;
+}
+
+/* Home Page */
+.homePage {
+  padding: 0 5% 4rem 5%;
+}
+
+.homePage h2 {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.homePage p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.headingcalc {
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: bold;
+  left: -150%;
+  position: relative;
 }
