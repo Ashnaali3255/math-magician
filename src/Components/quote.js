@@ -24,7 +24,6 @@ function Quote() {
   }, []);
 
   return (
-
     <div className="quote-container">
       <p>{isLoading ? 'Loading...' : (error || quote)}</p>
     </div>

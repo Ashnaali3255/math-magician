@@ -23,7 +23,7 @@ ul {
   display: flex;
   list-style: none;
   gap: 6%;
-  font-family: math, sans-serif;
+  font-family: fantasy, math ;
 }
 
 /* Quote styling */
