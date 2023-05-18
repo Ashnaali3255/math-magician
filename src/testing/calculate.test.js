@@ -1,5 +1,6 @@
 import calculate from '../logic/calculate';
 
+// This test file checks if every button on the calculator function as expected
 describe('Calculate testing', () => {
   it('Always an object should be returned', () => {
     const type = typeof (calculate({}, 'AC'));
