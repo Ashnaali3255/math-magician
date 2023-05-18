@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check if the Quote section renders properly 1`] = `
+<div
+  className="quote-container"
+>
+  <p>
+    Loading...
+  </p>
+</div>
+`;
