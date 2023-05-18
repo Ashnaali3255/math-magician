@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 import Calculator from '../Components/Calculator';
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
 
 // This test checks if the calculator renders in the DOM
 it('check if the Calculator renders properly', () => {
