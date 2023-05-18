@@ -1,6 +1,7 @@
 import operate from '../logic/operate';
 
-// This test file checks if the operator buttons of the calculator are functioning properly 
+// This test file checks if the operator buttons of the calculator are functioning properly
+
 describe('test for operate file', () => {
   it(' adding two numbers', () => {
     expect(operate(5, 2, '+')).toBe('7');
