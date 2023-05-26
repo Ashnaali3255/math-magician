@@ -105,7 +105,12 @@ git clone: https://github.com/Ashnaali3255/setup-react-2.git
 - [ ] **[Projects of React & Redux]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+  
+  ## 🚀 Live Demo <a name="Live-Demo"></a>
+  Live Demo: https://math-magician-76cw.onrender.com 
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
